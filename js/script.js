@@ -107,13 +107,8 @@ function initGame() {
   updateStats();
 
   clearInterval(gameState.timer);
-
-  if (!gameState.timer) {
-    gameState.timer = setInterval(() => {
-      gameState.time++;
-      updateStats();
-    }, 1000);
-  }
+  gameState.timer = null;
+  
   document.getElementById(
     "message"
   ).textContent = `Level ${gameState.level} started!`;
@@ -179,6 +174,13 @@ function move(dir) {
     setTimeout(() => {
       resetGame();
     }, 1500);
+  }
+
+  if (!gameState.timer) {
+    gameState.timer = setInterval(() => {
+      gameState.time++;
+      updateStats();
+    }, 1000);
   }
 }
 

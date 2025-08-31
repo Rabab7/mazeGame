@@ -46,7 +46,7 @@ h1 {
   padding: 12px 15px;
   border-radius: 8px;
   margin: 8px;
-  min-width: 110px;
+  min-width: 200px;
   font-size: 1.1rem;
 }
 
@@ -67,7 +67,7 @@ h1 {
   position: relative;
   overflow: auto;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .maze {
