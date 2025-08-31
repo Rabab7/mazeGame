@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- media style sheet -->
+  <link rel="stylesheet" href="./css/media.css">
+  <title>Maze Game</title>
+</head>
+
+<body>
+
+
+  <section class="game">
+    <div class="container">
+      <h1>🧩 maze game🧩</h1>
+
+      <div class="stats">
+        <div class="stat">⏱️ Time: <span id="time">0</span></div>
+        <div class="stat">🚩 Level: <span id="level">1</span></div>
+        <div class="stat">👣 Steps: <span id="steps">0</span></div>
+      </div>
+
+      <div class="maze-container">
+        <div class="maze" id="maze"></div>
+      </div>
+
+      <div class="message" id="message">use arrows for movement !</div>
+
+      <div class="controls">
+        <button id="replayBtn">🔄 Replay</button>
+        <button id="hintBtn">💡 Hint</button>
+      </div>
+
+      <div class="mobile-controls">
+        <button class="up" onclick="move('up')">⬆️</button>
+        <button class="left" onclick="move('left')">⬅️</button>
+        <button class="right" onclick="move('right')">➡️</button>
+        <button class="down" onclick="move('down')">⬇️</button>
+      </div>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
