@@ -116,7 +116,7 @@ function initGame() {
 
 function renderMaze() {
   const mazeEl = document.getElementById("maze");
-  mazeEl.style.gridTemplateColumns = `repeat(10,50px)`;
+  mazeEl.style.gridTemplateColumns = `repeat(10, 1fr)`;
   mazeEl.innerHTML = "";
   for (let r = 0; r < 10; r++) {
     for (let c = 0; c < 10; c++) {

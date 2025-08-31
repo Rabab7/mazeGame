@@ -49,10 +49,6 @@
     width: 45px;
     height: 45px;
   }
-
-  .mobile-controls {
-    display: none; /* إخفاء أزرار التحكم على الأجهزة اللوحية */
-  }
 }
 
 /* Phones screen  */
